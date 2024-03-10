@@ -1,0 +1,91 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Enlaces de Chat Personalizados</title>
+
+<div class="sidebar">
+  <center>
+  <div>
+MENU
+    <div class="menu-icon"></div> 
+ </div>
+    </center>
+  <div class="menu-btn" onclick="toggleSidebar()">
+    <img src="https://th.bing.com/th/id/R.f9b3f059c6e1b42e85d4eb6cb57af948?rik=k0EkFekijwmdbA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_440180.png&ehk=ju6VX61fu%2bFb5RjWR6oVIewKGHl56PNlOrVwO6IiFAo%3d&risl=&pid=ImgRaw&r=0" alt="Botón de Menú"><div class="menu-icon"></div>    
+  </div>
+  <ul>
+     <div class="separator2"></div>
+    <li><a href="https://hack.chat/?general">Chat general</a></li>
+    <li><a href="https://hack.chat/?programming">Chat de juegos</a></li>
+    <li><a href="https://hack.chat/?programming">Chat de programacion</a></li>
+    <li><a href="https://hack.chat/?lounge">Chat de universal</a></li>
+  </ul>
+</div>
+
+
+  
+ 
+</head>
+<body>
+ <h1> ConversaCraft</h1>
+<h4>Generador de Chat Personalizados</h4>
+<br>
+   <input type="text" id="chatInput" placeholder="Ingrese el texto personalizado" minlength="10">
+<br>
+    <button onclick="generarEnlace()">Generar Enlace</button>
+
+     <button onclick="redirigirAGithub()">Desarrolladores</button>
+       <button onclick="visitamigithub()">Visita Mi Github</button>
+  <br></br>
+  <div id="errorMessage" style="
+    display: none;
+    color: white;
+    background-color: #ff6347; /* Color coral */
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    animation: fadeInOut 3s ease;"></div>
+  
+  <div id="alertaCaracter" style="
+    display: none;
+    color: white;
+    background-color: #ff6347; /* Color coral */
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    animation: fadeInOut 2s ease;"></div>
+
+
+     <div class="separator"></div>
+  <div id="tableContainer">
+    <table>
+        <thead>
+            <tr>
+                <th>Borrar</th>
+                <th>Número de Chats Generados</th>
+                <th>Link del Chat Generado</th>
+                <th>Nombre Personalizado</th>
+                <th>Fecha y Hora</th>
+            </tr>
+        </thead>
+        <tbody id="chatList">
+            <!-- Aquí se mostrarán los chats generados -->
+        </tbody>
+    </table>
+  </div>
+<div class="separator"></div>
+   <footer>
+        <p>ConversaCraft / &copy; vercion - 0.0.0</p>
+    </footer>
+</body>
+</html>
